@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1500px;
+	width: 100%;
+	padding: 0 2rem;
+	margin: 4rem auto;
+}
+
+.category-container {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 100%;
+	margin: 1rem 0;
+}
+
+.category--label {
+	font-size: 18px;
+	margin-bottom: 1rem;
+}
+
+.category-sequence {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #555;
+	border-radius: 3px;
+}
+
+.category-sequence--top {
+	background: #d6d6d6;
+	padding: 0.5rem 0.3rem;
+}
+
+.category-sequence--top-input {
+	display: flex;
+	flex: 1;
+	background: #ffffff;
+	border: 1px solid #aaa;
+	padding: 5px 6px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.category-option-selected-list {
+	display: flex;
+	flex: 0 0 auto;
+}
+
+.selected-category {
+	display: flex;
+	flex: 0 0 auto;
+	font-size: 18px;
+	border-radius: 3px;
+	background-color: #003f00;
+	color: #ffffff;
+	margin-right: 8px;
+	height: 100%;
+	padding: 3px 6px;
+	align-items: center;
+}
+
+.selected-category > span {
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.selected-category:last-child {
+	margin-right: 10px;
+}
+
+.category-input-addition {
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.category-input-addition > input {
+	border: none;
+	background-color: none;
+	outline: none;
+	font-size: 18px;
+	width: 100%;
+}
+
+.category-sequence--bottom {
+	background-color: #ffffff;
+	display: block;
+	padding: 5px;
+}
+
+.category-sequence--option-to-select {
+	display: inline-block;
+	padding: 3px 6px;
+	color: #3a3a3a;
+	background-color: #b6b6b6;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.category-sequence--option-to-select:last-child {
+	margin-right: 0;
+}
+
+.input-section {
+	display: flex;
+	flex: 1;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+}
+.new-input {
+	flex: 1;
+	max-width: 250px;
+	padding: 5px 8px;
+	margin-right: 20px;
+}
+
+.submit-input {
+	cursor: pointer;
+	padding: 7px 8px;
+	background: #003f00;
+	color: #ffffff;
+	font-weight: 600;
+	border-radius: 3px;
+}
